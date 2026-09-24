@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cyber-shield-academy-f4v5ar655-criss1710r.vercel.app/sitemap.xml
