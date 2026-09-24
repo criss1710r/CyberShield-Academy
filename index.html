@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CyberShield Academy</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <span class="logo-icon">🛡️</span>
+            <span>Cyber<span>Shield</span></span>
+        </div>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#ramas">Ramas</a>
+            <a href="#aprende">Aprende</a>
+            <a href="#laboratorios">Laboratorios</a>
+        </nav>
+
+        <div class="nav-buttons">
+            <button class="btn-login">Iniciar sesión</button>
+            <button class="btn-register">Registrarse</button>
+        </div>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <main>
+
+        <section id="inicio" class="hero">
+
+            <div class="hero-content">
+
+                <div class="badge">
+                    <span></span>
+                    PLATAFORMA EDUCATIVA DE CIBERSEGURIDAD
+                </div>
+
+                <h1>
+                    Aprende a proteger
+                    <span>el mundo digital.</span>
+                </h1>
+
+                <p>
+                    Explora las principales ramas de la ciberseguridad,
+                    aprende conceptos fundamentales y desarrolla tus
+                    conocimientos mediante rutas de aprendizaje y
+                    laboratorios educativos.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <button class="btn-primary" onclick="startLearning()">
+                        Comenzar a aprender →
+                    </button>
+
+                    <button class="btn-secondary" onclick="exploreBranches()">
+                        Explorar ramas
+                    </button>
+
+                </div>
+
+                <div class="stats">
+
+                    <div>
+                        <strong>10+</strong>
+                        <span>Áreas de estudio</span>
+                    </div>
+
+                    <div>
+                        <strong>50+</strong>
+                        <span>Temas educativos</span>
+                    </div>
+
+                    <div>
+                        <strong>∞</strong>
+                        <span>Oportunidades para aprender</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PANEL TECNOLÓGICO -->
+
+            <div class="hero-terminal">
+
+                <div class="terminal-header">
+
+                    <div class="terminal-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <span>cybershield_terminal</span>
+
+                </div>
+
+                <div class="terminal-body">
+
+                    <p>
+                        <span class="green">root@cybershield</span>:~$
+                        <span class="white">scan --security</span>
+                    </p>
+
+                    <p class="terminal-output">
+                        Initializing security module...
+                    </p>
+
+                    <p class="terminal-output">
+                        Loading cybersecurity knowledge...
+                    </p>
+
+                    <p class="terminal-output">
+                        [████████████████████] 100%
+                    </p>
+
+                    <br>
+
+                    <p>
+                        <span class="green">SYSTEM</span>
+                        <span class="cyan">ONLINE</span>
+                    </p>
+
+                    <p>
+                        <span class="green">SECURITY</span>
+                        <span class="cyan">ACTIVE</span>
+                    </p>
+
+                    <p>
+                        <span class="green">LEARNING</span>
+                        <span class="cyan">READY</span>
+                    </p>
+
+                    <br>
+
+                    <p>
+                        <span class="green">root@cybershield</span>:~$
+                        <span class="cursor">_</span>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RAMAS -->
+
+        <section id="ramas" class="branches">
+
+            <div class="section-title">
+
+                <span>01 — EXPLORA</span>
+
+                <h2>
+                    Ramas de la
+                    <strong>ciberseguridad</strong>
+                </h2>
+
+                <p>
+                    La ciberseguridad está formada por diferentes
+                    especialidades. Descubre qué estudia cada una.
+                </p>
+
+            </div>
+
+
+            <div class="branch-grid">
+
+                <article class="branch-card">
+
+                    <div class="card-icon">🌐</div>
+
+                    <h3>Seguridad de Redes</h3>
+
+                    <p>
+                        Protección de redes, dispositivos y comunicaciones
+                        frente a accesos y actividades no autorizadas.
+                    </p>
+
+                    <a href="#">Explorar →</a>
+
+                </article>
+
+
+                <article class="branch-card">
+
+                    <div class="card-icon">🔐</div>
+
+                    <h3>Criptografía</h3>
+
+                    <p>
+                        Estudio de técnicas utilizadas para proteger
+                        información mediante algoritmos y claves.
+                    </p>
+
+                    <a href="#">Explorar →</a>
+
+                </article>
+
+
+                <article class="branch-card">
+
+                    <div class="card-icon">💻</div>
+
+                    <h3>Seguridad de Sistemas</h3>
+
+                    <p>
+                        Protección de sistemas operativos, servidores,
+                        dispositivos y recursos informáticos.
+                    </p>
+
+                    <a href="#">Explorar →</a>
+
+                </article>
+
+
+                <article class="branch-card">
+
+                    <div class="card-icon">🕵️</div>
+
+                    <h3>Pentesting</h3>
+
+                    <p>
+                        Evaluación autorizada de sistemas para identificar
+                        vulnerabilidades y mejorar su seguridad.
+                    </p>
+
+                    <a href="#">Explorar →</a>
+
+                </article>
+
+
+                <article class="branch-card">
+
+                    <div class="card-icon">🦠</div>
+
+                    <h3>Análisis de Malware</h3>
+
+                    <p>
+                        Estudio de software malicioso para comprender
+                        su comportamiento y desarrollar medidas defensivas.
+                    </p>
+
+                    <a href="#">Explorar →</a>
+
+                </article>
+
+
+                <article class="branch-card">
+
+                    <div class="card-icon">🔎</div>
+
+                    <h3>Informática Forense</h3>
+
+                    <p>
+                        Investigación y análisis de evidencias digitales
+                        relacionadas con incidentes de seguridad.
+                    </p>
+
+                    <a href="#">Explorar →</a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- APRENDIZAJE -->
+
+        <section id="aprende" class="learning">
+
+            <div class="learning-content">
+
+                <span>02 — APRENDE</span>
+
+                <h2>
+                    Construye tus conocimientos
+                    <strong>paso a paso.</strong>
+                </h2>
+
+                <p>
+                    No necesitas ser experto para comenzar. CyberShield
+                    organiza los contenidos en diferentes niveles para
+                    que puedas avanzar progresivamente.
+                </p>
+
+                <div class="levels">
+
+                    <div class="level">
+                        <div class="level-number">01</div>
+
+                        <div>
+                            <h3>Principiante</h3>
+                            <p>
+                                Fundamentos, conceptos básicos y seguridad digital.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="level">
+                        <div class="level-number">02</div>
+
+                        <div>
+                            <h3>Intermedio</h3>
+                            <p>
+                                Redes, Linux, criptografía y seguridad web.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="level">
+                        <div class="level-number">03</div>
+
+                        <div>
+                            <h3>Avanzado</h3>
+                            <p>
+                                Pentesting, forense, malware y respuesta a incidentes.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- LABORATORIOS -->
+
+        <section id="laboratorios" class="labs">
+
+            <div class="section-title">
+
+                <span>03 — PRACTICA</span>
+
+                <h2>
+                    Cyber<span>Labs</span>
+                </h2>
+
+                <p>
+                    Lleva la teoría a la práctica mediante laboratorios
+                    educativos y entornos controlados.
+                </p>
+
+            </div>
+
+
+            <div class="lab-container">
+
+                <div class="lab-card">
+
+                    <div class="lab-number">01</div>
+
+                    <h3>Fundamentos de Redes</h3>
+
+                    <p>
+                        Aprende conceptos básicos de IP, puertos,
+                        protocolos y comunicación de red.
+                    </p>
+
+                    <button>Ver laboratorio →</button>
+
+                </div>
+
+
+                <div class="lab-card">
+
+                    <div class="lab-number">02</div>
+
+                    <h3>Criptografía básica</h3>
+
+                    <p>
+                        Comprende hashes, cifrado simétrico,
+                        cifrado asimétrico y firmas digitales.
+                    </p>
+
+                    <button>Ver laboratorio →</button>
+
+                </div>
+
+
+                <div class="lab-card">
+
+                    <div class="lab-number">03</div>
+
+                    <h3>Análisis de Logs</h3>
+
+                    <p>
+                        Aprende a interpretar registros y detectar
+                        posibles eventos de seguridad.
+                    </p>
+
+                    <button>Ver laboratorio →</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-logo">
+            🛡️ CyberShield Academy
+        </div>
+
+        <p>
+            Plataforma educativa dedicada al aprendizaje
+            de la ciberseguridad.
+        </p>
+
+        <div class="footer-line"></div>
+
+        <p class="copyright">
+            © 2026 CyberShield Academy
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
