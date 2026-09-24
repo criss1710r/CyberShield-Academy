@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Seguridad de Redes | CyberShield Academy</title>
+
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/redes.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        <span class="logo-icon">🛡️</span>
+        <span>Cyber<span>Shield</span></span>
+    </div>
+
+    <nav>
+
+        <a href="../index.html">
+            Inicio
+        </a>
+
+        <a href="ramas.html">
+            Ramas
+        </a>
+
+        <a href="#">
+            Aprende
+        </a>
+
+        <a href="#">
+            CyberLabs
+        </a>
+
+    </nav>
+
+    <div class="nav-buttons">
+
+        <button class="btn-login">
+            Iniciar sesión
+        </button>
+
+        <button class="btn-register">
+            Registrarse
+        </button>
+
+    </div>
+
+</header>
+
+
+<main>
+
+
+<!-- CABECERA -->
+
+<section class="course-hero">
+
+    <div>
+
+        <span class="course-code">
+            CYBERSECURITY / NETWORK SECURITY
+        </span>
+
+        <h1>
+            Seguridad de
+            <span>Redes</span>
+        </h1>
+
+        <p>
+
+            Aprende cómo funcionan las redes informáticas
+            y cuáles son los principales mecanismos utilizados
+            para protegerlas frente a amenazas digitales.
+
+        </p>
+
+        <div class="course-info">
+
+            <span>📚 Nivel: Principiante</span>
+            <span>⏱️ Ruta: 6 módulos</span>
+            <span>🎯 Fundamentos</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTENIDO -->
+
+<section class="course-layout">
+
+
+<!-- SIDEBAR -->
+
+<aside class="course-sidebar">
+
+    <h3>
+        CONTENIDO
+    </h3>
+
+    <a href="#introduccion">
+        01. Introducción
+    </a>
+
+    <a href="#conceptos">
+        02. Conceptos fundamentales
+    </a>
+
+    <a href="#tcpip">
+        03. TCP/IP
+    </a>
+
+    <a href="#ip">
+        04. IP y puertos
+    </a>
+
+    <a href="#dns">
+        05. DNS
+    </a>
+
+    <a href="#firewall">
+        06. Firewalls
+    </a>
+
+    <a href="#vpn">
+        07. VPN
+    </a>
+
+    <a href="#ids">
+        08. IDS / IPS
+    </a>
+
+    <a href="#quiz">
+        09. Quiz
+    </a>
+
+</aside>
+
+
+<!-- CONTENIDO PRINCIPAL -->
+
+<div class="course-content">
+
+
+<!-- INTRODUCCIÓN -->
+
+<section id="introduccion" class="lesson">
+
+    <span class="lesson-number">
+        MÓDULO 01
+    </span>
+
+    <h2>
+        Introducción a la seguridad de redes
+    </h2>
+
+    <p>
+
+        Las redes permiten que computadores, servidores,
+        teléfonos, dispositivos IoT y otros sistemas
+        intercambien información.
+
+    </p>
+
+    <p>
+
+        La seguridad de redes busca proteger esa comunicación
+        y los recursos conectados frente a accesos no
+        autorizados, interrupciones, manipulación de datos
+        y otras amenazas.
+
+    </p>
+
+
+    <div class="info-box">
+
+        <strong>🎯 Objetivo</strong>
+
+        <p>
+
+            Comprender los principios básicos que permiten
+            proteger una infraestructura de red.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- CONCEPTOS -->
+
+<section id="conceptos" class="lesson">
+
+    <span class="lesson-number">
+        MÓDULO 02
+    </span>
+
+    <h2>
+        Conceptos fundamentales
+    </h2>
+
+    <p>
+        Antes de estudiar herramientas de seguridad,
+        es necesario comprender algunos conceptos básicos.
+    </p>
+
+
+    <div class="concept-grid">
+
+        <div class="concept">
+
+            <h3>🌐 Red</h3>
+
+            <p>
+                Conjunto de dispositivos conectados
+                que pueden intercambiar información.
+            </p>
+
+        </div>
+
+
+        <div class="concept">
+
+            <h3>📍 Dirección IP</h3>
+
+            <p>
+                Identificador utilizado para localizar
+                un dispositivo dentro de una red.
+            </p>
+
+        </div>
+
+
+        <div class="concept">
+
+            <h3>🚪 Puerto</h3>
+
+            <p>
+                Punto lógico utilizado por los servicios
+                de red para establecer comunicaciones.
+            </p>
+
+        </div>
+
+
+        <div class="concept">
+
+            <h3>🛡️ Firewall</h3>
+
+            <p>
+                Sistema que controla el tráfico de red
+                de acuerdo con determinadas reglas.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- TCP IP -->
+
+<section id="tcpip" class="lesson">
+
+    <span class="lesson-number">
+        MÓDULO 03
+    </span>
+
+    <h2>
+        Modelo TCP/IP
+    </h2>
+
+    <p>
+
+        TCP/IP es un conjunto de protocolos que permite
+        la comunicación entre dispositivos conectados
+        a una red.
+
+    </p>
+
+
+    <div class="protocol-stack">
+
+        <div>
+            <strong>Aplicación</strong>
+            <span>HTTP · DNS · SMTP</span>
+        </div>
+
+        <div>
+            <strong>Transporte</strong>
+            <span>TCP · UDP</span>
+        </div>
+
+        <div>
+            <strong>Internet</strong>
+            <span>IP · ICMP</span>
+        </div>
+
+        <div>
+            <strong>Acceso a red</strong>
+            <span>Ethernet · Wi-Fi</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- IP -->
+
+<section id="ip" class="lesson">
+
+    <span class="lesson-number">
+        MÓDULO 04
+    </span>
+
+    <h2>
+        IP y puertos
+    </h2>
+
+    <p>
+
+        Las direcciones IP permiten identificar interfaces
+        dentro de una red, mientras que los puertos permiten
+        diferenciar servicios y aplicaciones.
+
+    </p>
+
+
+    <div class="example-terminal">
+
+        <p>
+            <span>PC</span>
+            →
+            <span>192.168.1.10</span>
+        </p>
+
+        <p>
+            Servidor web
+            →
+            <span>192.168.1.20:443</span>
+        </p>
+
+        <p>
+            SSH
+            →
+            <span>192.168.1.20:22</span>
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- DNS -->
+
+<section id="dns" class="lesson">
+
+    <span class="lesson-number">
+        MÓDULO 05
+    </span>
+
+    <h2>
+        DNS
+    </h2>
+
+    <p>
+
+        El Domain Name System (DNS) permite traducir
+        nombres de dominio legibles por las personas
+        en direcciones IP utilizadas por los sistemas.
+
+    </p>
+
+
+    <div class="flow">
+
+        <div>
+            usuario
+        </div>
+
+        <span>→</span>
+
+        <div>
+            www.ejemplo.com
+        </div>
+
+        <span>→</span>
+
+        <div>
+            DNS
+        </div>
+
+        <span>→</span>
+
+        <div>
+            Dirección IP
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FIREWALL -->
+
+<section id="firewall" class="lesson">
+
+    <span class="lesson-number">
+        MÓDULO 06
+    </span>
+
+    <h2>
+        Firewalls
+    </h2>
+
+    <p>
+
+        Un firewall puede aplicar reglas para permitir,
+        bloquear o registrar determinados tipos de tráfico.
+
+    </p>
+
+
+    <div class="firewall-example">
+
+        <div>
+
+            <span class="allowed">
+                ALLOW
+            </span>
+
+            HTTPS : 443
+
+        </div>
+
+        <div>
+
+            <span class="blocked">
+                BLOCK
+            </span>
+
+            Tráfico no autorizado
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- VPN -->
+
+<section id="vpn" class="lesson">
+
+    <span class="lesson-number">
+        MÓDULO 07
+    </span>
+
+    <h2>
+        VPN
+    </h2>
+
+    <p>
+
+        Una VPN establece un túnel de comunicación
+        protegido entre dispositivos o redes a través
+        de una infraestructura de red existente.
+
+    </p>
+
+</section>
+
+
+<!-- IDS IPS -->
+
+<section id="ids" class="lesson">
+
+    <span class="lesson-number">
+        MÓDULO 08
+    </span>
+
+    <h2>
+        IDS e IPS
+    </h2>
+
+    <div class="comparison">
+
+        <div>
+
+            <h3>IDS</h3>
+
+            <p>
+                Detecta y genera alertas ante posibles
+                actividades sospechosas.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>IPS</h3>
+
+            <p>
+                Puede detectar determinadas amenazas
+                y actuar para bloquearlas.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- QUIZ -->
+
+<section id="quiz" class="quiz">
+
+    <span class="lesson-number">
+        EVALUACIÓN
+    </span>
+
+    <h2>
+        Comprueba tus conocimientos
+    </h2>
+
+    <form id="networkQuiz">
+
+
+        <div class="question">
+
+            <h3>
+                1. ¿Qué función cumple un firewall?
+            </h3>
+
+            <label>
+                <input type="radio"
+                       name="q1"
+                       value="a">
+
+                Crear direcciones IP
+            </label>
+
+            <label>
+                <input type="radio"
+                       name="q1"
+                       value="b">
+
+                Controlar tráfico según reglas
+            </label>
+
+            <label>
+                <input type="radio"
+                       name="q1"
+                       value="c">
+
+                Traducir nombres DNS
+            </label>
+
+        </div>
+
+
+        <div class="question">
+
+            <h3>
+                2. ¿Qué protocolo pertenece a la capa de transporte?
+            </h3>
+
+            <label>
+                <input type="radio"
+                       name="q2"
+                       value="a">
+
+                TCP
+            </label>
+
+            <label>
+                <input type="radio"
+                       name="q2"
+                       value="b">
+
+                DNS
+            </label>
+
+            <label>
+                <input type="radio"
+                       name="q2"
+                       value="c">
+
+                IP
+            </label>
+
+        </div>
+
+
+        <div class="question">
+
+            <h3>
+                3. ¿Cuál es una función de DNS?
+            </h3>
+
+            <label>
+                <input type="radio"
+                       name="q3"
+                       value="a">
+
+                Traducir nombres de dominio a direcciones IP
+            </label>
+
+            <label>
+                <input type="radio"
+                       name="q3"
+                       value="b">
+
+                Bloquear todo el tráfico
+            </label>
+
+            <label>
+                <input type="radio"
+                       name="q3"
+                       value="c">
+
+                Cifrar todos los discos
+            </label>
+
+        </div>
+
+
+        <button
+            type="submit"
+            class="quiz-button">
+
+            Evaluar respuestas
+
+        </button>
+
+    </form>
+
+
+    <div
+        id="quizResult"
+        class="quiz-result">
+    </div>
+
+</section>
+
+
+</div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-logo">
+        🛡️ CyberShield Academy
+    </div>
+
+    <p>
+        Plataforma educativa de ciberseguridad.
+    </p>
+
+    <div class="footer-line"></div>
+
+    <p class="copyright">
+        © 2026 CyberShield Academy
+    </p>
+
+</footer>
+
+
+<script src="../js/redes.js"></script>
+
+</body>
+
+</html>
