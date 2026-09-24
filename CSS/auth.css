@@ -1,0 +1,311 @@
+/* ==========================================
+   CYBERSHIELD ACADEMY
+   AUTENTICACIÓN
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    color: #ffffff;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(0, 255, 136, 0.12),
+            transparent 35%
+        ),
+        #020504;
+}
+
+
+/* ==========================================
+   CONTENEDOR
+========================================== */
+
+.auth-container {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+}
+
+
+/* ==========================================
+   TARJETA
+========================================== */
+
+.auth-card {
+    width: 100%;
+    max-width: 460px;
+
+    padding: 38px;
+
+    background: rgba(7, 16, 13, 0.96);
+
+    border: 1px solid #1b4434;
+    border-radius: 18px;
+
+    box-shadow:
+        0 0 40px rgba(0, 255, 136, 0.08),
+        0 20px 70px rgba(0, 0, 0, 0.5);
+}
+
+
+/* ==========================================
+   CABECERA
+========================================== */
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 18px;
+
+    font-size: 32px;
+
+    border-radius: 16px;
+
+    background: rgba(0, 255, 136, 0.06);
+
+    border: 1px solid #00ff88;
+
+    box-shadow:
+        0 0 25px rgba(0, 255, 136, 0.15);
+}
+
+.auth-header h1 {
+    margin-bottom: 8px;
+
+    color: #00ff88;
+
+    font-size: 26px;
+
+    letter-spacing: 0.5px;
+}
+
+.auth-header p {
+    color: #82958c;
+
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   PESTAÑAS
+========================================== */
+
+.auth-tabs {
+    display: flex;
+
+    margin-bottom: 28px;
+
+    border-bottom: 1px solid #1b342a;
+}
+
+.auth-tabs button {
+    flex: 1;
+
+    padding: 13px 10px;
+
+    border: none;
+    border-bottom: 2px solid transparent;
+
+    background: transparent;
+
+    color: #72837b;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.auth-tabs button:hover {
+    color: #ffffff;
+}
+
+.auth-tabs button.active {
+    color: #00ff88;
+
+    border-bottom-color: #00ff88;
+}
+
+
+/* ==========================================
+   FORMULARIOS
+========================================== */
+
+.auth-form h2 {
+    margin-bottom: 22px;
+
+    font-size: 22px;
+
+    color: #f1f7f4;
+}
+
+.auth-form label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #a9b8b1;
+
+    font-size: 13px;
+}
+
+.auth-form input {
+    width: 100%;
+
+    padding: 14px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid #244438;
+    border-radius: 8px;
+
+    outline: none;
+
+    background: #050b08;
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+.auth-form input::placeholder {
+    color: #53635c;
+}
+
+.auth-form input:focus {
+    border-color: #00ff88;
+
+    box-shadow:
+        0 0 0 2px rgba(0, 255, 136, 0.08);
+}
+
+
+/* ==========================================
+   BOTÓN
+========================================== */
+
+.auth-button {
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 5px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #00d978;
+
+    color: #021109;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.auth-button:hover {
+    background: #00ff88;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 8px 25px rgba(0, 255, 136, 0.15);
+}
+
+
+/* ==========================================
+   MENSAJES
+========================================== */
+
+.message {
+    min-height: 20px;
+
+    margin-top: 15px;
+
+    text-align: center;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* ==========================================
+   OCULTAR FORMULARIO
+========================================== */
+
+.hidden {
+    display: none !important;
+}
+
+
+/* ==========================================
+   VOLVER
+========================================== */
+
+.back-home {
+    display: block;
+
+    margin-top: 25px;
+
+    text-align: center;
+
+    color: #00ff88;
+
+    text-decoration: none;
+
+    font-size: 13px;
+}
+
+.back-home:hover {
+    text-decoration: underline;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 520px) {
+
+    .auth-container {
+        padding: 15px;
+    }
+
+    .auth-card {
+        padding: 28px 20px;
+    }
+
+    .auth-header h1 {
+        font-size: 22px;
+    }
+}

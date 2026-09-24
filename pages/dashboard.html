@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Dashboard | CyberShield Academy</title>
+
+    <link
+        rel="stylesheet"
+        href="../CSS/dashboard.css"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="dashboard-navbar">
+
+        <a
+            href="../index.html"
+            class="dashboard-logo"
+        >
+            🛡️ CyberShield Academy
+        </a>
+
+
+        <div class="user-menu">
+
+            <span id="navUsername">
+                Usuario
+            </span>
+
+            <button
+                id="logoutButton"
+            >
+                Cerrar sesión
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         CONTENIDO
+    ========================== -->
+
+    <main class="dashboard-container">
+
+
+        <!-- BIENVENIDA -->
+
+        <section class="welcome-section">
+
+            <div>
+
+                <span class="section-label">
+                    CYBERSHIELD ACADEMY
+                </span>
+
+                <h1>
+                    Bienvenido,
+                    <span id="userName">
+                        Usuario
+                    </span>
+                </h1>
+
+                <p>
+                    Continúa tu formación en
+                    ciberseguridad y desarrolla
+                    nuevas habilidades.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ESTADÍSTICAS
+        ========================== -->
+
+        <section class="stats-grid">
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    🧑‍💻
+                </div>
+
+                <div>
+
+                    <span>
+                        Nivel
+                    </span>
+
+                    <strong id="userLevel">
+                        1
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    ⚡
+                </div>
+
+                <div>
+
+                    <span>
+                        Experiencia
+                    </span>
+
+                    <strong>
+                        <span id="userXP">
+                            0
+                        </span>
+                        XP
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    📚
+                </div>
+
+                <div>
+
+                    <span>
+                        Cursos
+                    </span>
+
+                    <strong id="courseCount">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    🎯
+                </div>
+
+                <div>
+
+                    <span>
+                        Progreso
+                    </span>
+
+                    <strong id="averageProgress">
+                        0%
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             NIVEL / XP
+        ========================== -->
+
+        <section class="level-card">
+
+            <div class="level-header">
+
+                <div>
+
+                    <span class="section-label">
+                        PROGRESO DEL ESTUDIANTE
+                    </span>
+
+                    <h2>
+                        Nivel
+                        <span id="levelNumber">
+                            1
+                        </span>
+                    </h2>
+
+                </div>
+
+                <strong>
+                    <span id="levelXP">
+                        0
+                    </span>
+                    XP
+                </strong>
+
+            </div>
+
+
+            <div class="xp-bar">
+
+                <div
+                    id="xpProgress"
+                    class="xp-progress">
+                </div>
+
+            </div>
+
+
+            <p id="xpText">
+                0 / 100 XP para el siguiente nivel
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             CURSOS
+        ========================== -->
+
+        <section class="courses-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        FORMACIÓN
+                    </span>
+
+                    <h2>
+                        Mis cursos
+                    </h2>
+
+                </div>
+
+                <a
+                    href="ramas.html"
+                    class="view-all"
+                >
+                    Explorar cursos →
+                </a>
+
+            </div>
+
+
+            <div
+                id="coursesContainer"
+                class="courses-grid"
+            >
+
+                <div class="loading-card">
+                    Cargando cursos...
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =========================
+         SUPABASE
+    ========================== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="../js/supabase.js"></script>
+
+    <script src="../js/dashboard.js"></script>
+
+</body>
+
+</html>
