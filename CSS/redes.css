@@ -521,3 +521,41 @@ footer p {
         transform: rotate(90deg);
     }
 }
+
+/* =========================================
+   COMPLETAR MÓDULO
+========================================= */
+
+.module-complete {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #19362b;
+}
+
+.complete-button {
+    padding: 13px 22px;
+    border: 1px solid #00ff88;
+    border-radius: 7px;
+    background: rgba(0, 255, 136, 0.08);
+    color: #00ff88;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.complete-button:hover {
+    background: #00ff88;
+    color: #021109;
+    transform: translateY(-2px);
+}
+
+.complete-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.module-message {
+    margin-top: 12px;
+    font-size: 14px;
+}

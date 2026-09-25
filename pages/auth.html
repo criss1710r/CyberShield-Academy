@@ -33,26 +33,52 @@
 
             <!-- PESTAÑAS -->
 
-            <div class="auth-tabs">
+            <div class="auth-buttons">
 
-                <button
-                    id="loginTab"
-                    class="active"
-                    onclick="showLogin()">
+                <a href="auth.html" class="btn-login">
+                Iniciar sesión
+                </a>
 
-                    Iniciar sesión
-
-                </button>
-
-                <button
-                    id="registerTab"
-                    onclick="showRegister()">
-
-                    Registrarse
-
-                </button>
+                <a href="auth.html" class="btn-register">
+                Registrarse
+                </a>
 
             </div>
+
+
+<div class="user-menu">
+    <div class="user-profile">
+        <div class="user-avatar">
+            C
+        </div>
+        <div class="user-info">
+            <span class="user-name">
+                Usuario
+            </span>
+            <span class="user-level">
+                Nivel 1
+            </span>
+            <span class="user-xp">
+            0 XP
+            </span>
+        </div>
+    </div>
+
+    <div class="user-dropdown">
+        <a href="dashboard.html">
+            📊 Mi Dashboard
+        </a>
+        <a href="#">
+            👤 Mi perfil
+        </a>
+        <a href="#">
+            ⚙️ Configuración
+        </a>
+        <button onclick="logoutUser()">
+            🚪 Cerrar sesión
+        </button>
+    </div>
+</div>
 
 
             <!-- =========================
