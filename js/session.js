@@ -3,17 +3,44 @@
 // SISTEMA GLOBAL DE SESIÓN
 // ==========================================
 
+
+// ==========================================
+// RUTAS DEL PROYECTO
+// ==========================================
+
+function getPagePath(file) {
+
+    const inPages =
+        window.location.pathname.includes("/pages/");
+
+    return inPages
+        ? file
+        : `pages/${file}`;
+}
+
+
+// ==========================================
+// CARGAR SESIÓN
+// ==========================================
+
 async function loadUserSession() {
 
-    const { data: { session }, error } =
-        await supabaseClient.auth.getSession();
+    const {
+        data: { session },
+        error
+    } = await supabaseClient.auth.getSession();
 
     if (error) {
-        console.error("Error obteniendo sesión:", error);
+
+        console.error(
+            "Error obteniendo sesión:",
+            error
+        );
+
         return;
     }
 
-    updateNavbar(session);
+    await updateNavbar(session);
 }
 
 
@@ -23,16 +50,24 @@ async function loadUserSession() {
 
 async function updateNavbar(session) {
 
-    const loginButtons = document.querySelector(".auth-buttons");
-    const userMenu = document.querySelector(".user-menu");
+    const loginButtons =
+        document.querySelector(".auth-buttons");
+
+    const userMenu =
+        document.querySelector(".user-menu");
+
+
+    // Si la página todavía no tiene sistema
+    // de usuario, no hacemos nada.
 
     if (!loginButtons || !userMenu) {
         return;
     }
 
-    // --------------------------------------
+
+    // ======================================
     // USUARIO NO AUTENTICADO
-    // --------------------------------------
+    // ======================================
 
     if (!session) {
 
@@ -43,9 +78,9 @@ async function updateNavbar(session) {
     }
 
 
-    // --------------------------------------
+    // ======================================
     // USUARIO AUTENTICADO
-    // --------------------------------------
+    // ======================================
 
     loginButtons.style.display = "none";
     userMenu.style.display = "flex";
@@ -53,16 +88,16 @@ async function updateNavbar(session) {
 
     const user = session.user;
 
-    const fullName =
-        user.user_metadata?.full_name ||
+
+    // ======================================
+    // DATOS DEL USUARIO
+    // ======================================
+
+    let username =
         user.user_metadata?.username ||
+        user.user_metadata?.full_name ||
         user.email?.split("@")[0] ||
         "Usuario";
-
-
-    const username =
-        user.user_metadata?.username ||
-        fullName;
 
 
     const userNameElement =
@@ -73,29 +108,35 @@ async function updateNavbar(session) {
 
 
     if (userNameElement) {
-        userNameElement.textContent = username;
+
+        userNameElement.textContent =
+            username;
     }
 
 
     if (userAvatar) {
+
         userAvatar.textContent =
             username.charAt(0).toUpperCase();
     }
 
 
-    // --------------------------------------
+    // ======================================
     // OBTENER PERFIL
-    // --------------------------------------
+    // ======================================
 
-    const { data: profile, error: profileError } =
-        await supabaseClient
-            .from("profiles")
-            .select("username, full_name, level, xp")
-            .eq("id", user.id)
-            .single();
+    const {
+        data: profile,
+        error: profileError
+    } = await supabaseClient
+        .from("profiles")
+        .select("username, full_name, level, xp")
+        .eq("id", user.id)
+        .single();
 
 
     if (profileError) {
+
         console.warn(
             "No se pudo cargar el perfil:",
             profileError.message
@@ -105,13 +146,26 @@ async function updateNavbar(session) {
     }
 
 
-    // --------------------------------------
-    // DATOS DEL PERFIL
-    // --------------------------------------
+    // ======================================
+    // ACTUALIZAR DATOS DEL PERFIL
+    // ======================================
 
-    if (profile.username && userNameElement) {
-        userNameElement.textContent =
+    if (profile.username) {
+
+        username =
             profile.username;
+
+        if (userNameElement) {
+
+            userNameElement.textContent =
+                username;
+        }
+
+        if (userAvatar) {
+
+            userAvatar.textContent =
+                username.charAt(0).toUpperCase();
+        }
     }
 
 
@@ -123,12 +177,14 @@ async function updateNavbar(session) {
 
 
     if (levelElement) {
+
         levelElement.textContent =
             `Nivel ${profile.level || 1}`;
     }
 
 
     if (xpElement) {
+
         xpElement.textContent =
             `${profile.xp || 0} XP`;
     }
@@ -141,8 +197,10 @@ async function updateNavbar(session) {
 
 async function logoutUser() {
 
-    const { error } =
-        await supabaseClient.auth.signOut();
+    const {
+        error
+    } = await supabaseClient.auth.signOut();
+
 
     if (error) {
 
@@ -154,7 +212,9 @@ async function logoutUser() {
         return;
     }
 
-    window.location.href = "auth.html";
+
+    window.location.href =
+        getPagePath("auth.html");
 }
 
 
@@ -170,7 +230,12 @@ supabaseClient.auth.onAuthStateChange(
             event
         );
 
-        updateNavbar(session);
+
+        setTimeout(function() {
+
+            updateNavbar(session);
+
+        }, 0);
     }
 );
 
